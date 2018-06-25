@@ -6,6 +6,7 @@
       {% else %}
       <title>&#9834; Tina Wong</title>
       {% endif %}
+      <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
       <link rel="stylesheet" href="/static/styles.css" type="text/css">
       <link rel="stylesheet" href="/static/navbar.css" type="text/css">
     </head>
@@ -13,7 +14,16 @@
         {% include "/navbar.html" %}
         <br>
         <div class="section">
-        {% block content %}{% endblock %}
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+           {% for message in messages %}
+           <li>{{ message }}</li>
+           {% endfor %}
+         </ul>
+         {% endif %}
+         {% endwith %}
+         {% block content %}{% endblock %}
         </div>
     </body>
 </html>
