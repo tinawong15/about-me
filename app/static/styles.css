@@ -1,0 +1,14 @@
+body {
+  color: #414141;               /* Dark gray */
+  background-color: white;
+  font-size: 18px;
+}
+
+.section {
+    padding-top: 50px;
+    margin-left: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", sans-serif;
+}

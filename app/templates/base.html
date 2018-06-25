@@ -1,0 +1,19 @@
+<html>
+    <head>
+      <meta charset='UTF-8'/>
+      {% if title %}
+      <title>&#9834; {{ title }} &mdash; Tina Wong</title>
+      {% else %}
+      <title>&#9834; Tina Wong</title>
+      {% endif %}
+      <link rel="stylesheet" href="/static/styles.css" type="text/css">
+      <link rel="stylesheet" href="/static/navbar.css" type="text/css">
+    </head>
+    <body>
+        {% include "/navbar.html" %}
+        <br>
+        <div class="section">
+        {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>
