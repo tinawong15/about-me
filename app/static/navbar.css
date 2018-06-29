@@ -18,7 +18,7 @@ a:hover {
   position: fixed;
   display: flex;
   justify-content: flex-end;
-
+  z-index: 10;
   width: 100%;
   padding: 15px;
   background: #D6E9FE;
