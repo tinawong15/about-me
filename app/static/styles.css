@@ -18,7 +18,9 @@ h1 {
 .text {
   margin-left: 15px;
   margin-top: 50px;
+  display: block;
 }
+
 .errors {
   color: red;
 }
